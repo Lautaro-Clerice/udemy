@@ -1,0 +1,78 @@
+.calculadora {
+    display:grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "input input input2 input2"
+    "sumar restar multiplicar dividir"
+    "potencia potencia raiz raiz"
+    "abs abs random random"
+    "resultado resultado resultado resultado";
+    grid-gap: 10px;
+    width: 50%;
+    height: 400px;
+}
+
+.btn {
+    background-color: rgba(158, 98, 214, 0.527);
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+input {
+    border-radius: 10px;
+    height: 70px;
+    width: 100%;
+}
+.btn-1 {
+    grid-area: input;
+}
+.btn-2 {
+    grid-area: input2;
+}
+.btn-3 {
+    grid-area: sumar;
+    display: flex;
+    align-items: center;
+}
+.btn-4 {
+    grid-area: restar;
+    display: flex;
+    align-items: center;
+}
+.btn-5 {
+    grid-area: multiplicar;
+    display: flex;
+    align-items: center;
+}
+.btn-6 {
+    grid-area: dividir;
+    display: flex;
+    align-items: center;
+}
+.btn-7 {
+    grid-area: potencia;
+    display: flex;
+    align-items: center;
+}
+.btn-8 {
+    grid-area: raiz;
+    display: flex;
+    align-items: center;
+}
+.btn-9 {
+    grid-area: abs;
+    display: flex;
+    align-items: center;
+}
+.btn-10 {
+    grid-area: random;
+    display: flex;
+    align-items: center;
+}
+.btn-11{
+    grid-area: resultado;
+
+}
